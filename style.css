@@ -1,33 +1,242 @@
 body {
-    background-image: url('Background copy.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('convokash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Adjust as per your design */
+    align-items: center;
 }
-header {
-    background-color: rgba(255, 255, 255, 0.7); 
-    padding: 10px;
-    position: fixed;
+
+nav {
+    position: absolute;
+    top: 0;
     width: 100%;
-    z-index: 1000; 
+    background-color: rgba(51, 51, 51, 0.8);
+    overflow: hidden;
 }
-nav ul {
+
+.nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-list li a:hover {
+    background-color: #111;
+}
+
+aside {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    float: right;
+    margin-top: 80px; /* Adjust top margin based on your design */
     text-align: center;
 }
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+
+@media only screen and (max-width: 768px) {
+    aside {
+        width: 90%; 
+        margin-top: 40px; 
+    }
 }
-nav ul li a {
+
+@media only screen and (max-width: 480px) {
+    aside {
+        padding: 10px;
+        float: right; 
+    }
+}
+
+aside h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+}
+
+aside input[type="text"], aside input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+aside input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+aside input[type="submit"]:hover {
+    background-color: #111;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 7px 200px; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links li a {
+    color: white;
     text-decoration: none;
-    color: #333;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: vertical; /* Allows vertical resizing */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ee8da5;
+    color: rgb(228, 139, 246);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #bbf0bd;
+}
+
+#topicForm {
+    max-width: 400px; /* Example maximum width for the form */
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#topicForm label {
     font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
 }
-nav ul li a:hover {
-    color: #96d2ee; /* Hover color */
+
+#topicForm select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
+
+#topicForm button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#topicForm button:hover {
+    background-color: #111;
+}
+
+#section1 {
+    background-color: rgba(175, 159, 159, 0.928);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(219, 237, 252, 0.1);
+    width: 400px;
+    float: left; /* Adjust float direction */
+    margin-top: 100px; /* Adjust top margin based on your design */
+    text-align: center;
+}
+
+.booking-image {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.booking-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px

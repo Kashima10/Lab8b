@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design Page</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <header> Freestyle Design Page </header>
+
     <nav>
         <ul class="nav-list">
             <li><a href="#home">Home</a></li>
@@ -17,5 +16,55 @@
             <li><a href="contactpg.html">Contact</a></li>
         </ul>
     </nav>
+    
+    <div class="booking-image">
+        <img src="https://images.app.goo.gl/kKs2rd1sy4aPT7ZF9" alt="Booking Appointment">
+    </div>
+
+    <aside>
+        <h1>Let’s Book a One on One Chat</h1>
+        <form action="submit_form.php" method="post">
+            <input type="text" name="username" placeholder="Enter Your Name" required>
+            <input type="text" name="topic" placeholder="What Would You Like to Discuss" required>
+            <input type="submit" value="Submit">
+        </form>
+    </aside> 
+
+    <section id="section1">
+        <form id="topicForm">
+            <label for="topics">Topic to Discuss:</label>
+            <select id="topics" name="topics">
+                <option value="realestate">Real Estate</option>
+                <option value="financing">Financing</option>
+                <option value="todo">Things To-Do in Toronto</option>
+                <option value="captain">Captain Appointment</option>
+                <option value="traveling">Traveling</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>&copy; Sold By Kash. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="page2.html">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="contactpg.html">Contact</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://www.facebook.com/SoldByKash?mibextid=LQQJ4d" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/soldbykash/" target="_blank">Instagram</a>
+        </div>
+    </footer>
+
 </body>
 </html>
